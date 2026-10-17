@@ -1,0 +1,52 @@
+@media (max-width: 1100px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .reviews-stats { grid-template-columns: repeat(2, 1fr); }
+  .header-meta { display: none; }
+}
+
+@media (max-width: 900px) {
+  .reviews-page { grid-template-columns: 1fr; }
+  .stack-grid { grid-template-columns: 1fr; }
+  .section-heading { gap: 20px; }
+}
+
+@media (max-width: 700px) {
+  .section-wrap, .site-header { width: calc(100% - 32px); }
+  .site-header { height: 70px; }
+  .menu-toggle { display: block; }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 65px; left: 0; right: 0;
+    padding: 18px;
+    background: #11182b;
+    border: 1px solid var(--line);
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    box-shadow: 0 24px 50px rgba(0,0,0,.5);
+    z-index: 10;
+  }
+  .nav.open { display: flex; }
+  .nav a { padding: 12px; }
+  .nav-cta { text-align: center; margin-top: 7px; }
+
+  .hero { grid-template-columns: 1fr; padding-top: 60px; padding-bottom: 65px; gap: 30px; }
+  .hero-visual { min-height: 340px; }
+  .projects-grid, .process-grid, .services-grid { grid-template-columns: 1fr; }
+  .reviews-stats { grid-template-columns: repeat(2, 1fr); }
+  .about-panel { grid-template-columns: 1fr; padding: 26px; gap: 14px; }
+  .search-bar { flex-direction: column; }
+  .search-bar input, .search-bar select { width: 100%; }
+  .reviews-book { padding: 18px; }
+  .review-text { min-height: unset; }
+  .cursor { display: none; }
+  body { cursor: auto; }
+  .modal > *:not(.modal-hero):not(.modal-close) { padding-left: 22px; padding-right: 22px; }
+  .modal ul { padding-left: 42px; }
+  .contact-card { padding: 44px 20px; }
+  .contact-card::after { font-size: 120px; bottom: -60px; }
+  .about-mark { font-size: 42px; }
+}
