@@ -150,3 +150,16 @@ h3 { font-size: 15px; letter-spacing: -.03em; }
 [data-reveal].in {
   opacity: 1; transform: translateY(0);
 }
+
+/* Фикс 3D-фона */
+#threeScene, #particleCanvas {
+  position: fixed !important;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: -1 !important;
+  pointer-events: none;
+}
+main, .site-header, footer, .section-wrap {
+  position: relative;
+  z-index: 10;
+}
